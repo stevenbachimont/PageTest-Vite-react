@@ -1,0 +1,38 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #191a27;
+    color: #8a876d;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    justify-content: space-between;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 1rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+li {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+li:hover {
+    color: #ffcc00;
+}
