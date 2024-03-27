@@ -1,21 +1,32 @@
-
 nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: #191a27;
     color: #8a876d;
-    padding: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    height: 70px;
+    z-index: 20;
     justify-content: space-between;
+    transition: background-color 0.6s ease, color 0.8s ease;
 }
+
+nav:hover {
+    background-color: #797d9b;
+    color: #2d2c21;
+    h1 {
+        scale: 300%;
+        margin: 150px;
+    }
+}
+
 h1 {
     text-align: center;
     font-size: 24px;
-    margin-top: 1rem;
+    margin: 10px;
 }
 
 ul {
@@ -35,4 +46,18 @@ li {
 
 li:hover {
     color: #ffcc00;
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 12px;
+        margin: 10px;
+    }
 }
