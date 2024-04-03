@@ -2,51 +2,56 @@ import "/components/Main.css";
 import Card from './Card';
 
 function Main() {
-    const Vomito = {
+
+
+    const nftList = [
+        {
         image:"https://media3.giphy.com/avatars/doodlesbyburnttoast/dMqxHmPPA8fd.gif",
         firstName:"Vomito",
         lastName:"DOODLES"
-    }
-    const Hangry = {
+    },
+     {
         image:"https://media.tenor.com/cUzMbdPym1YAAAAd/doodle-doodles.gif",
         firstName:"Hangry",
         lastName:"DOODLES"
-    }
-    const Beat = {
+    },
+    {
         image:"https://i.giphy.com/jQb5vQCpxZk6WgrB3z.webp",
         firstName:"Beat",
         lastName:"DOODLES"
-    }
-    const Super = {
+    },
+   {
         image:"https://openseauserdata.com/files/1de504ef743bdd851b637488b24dba25.gif",
         firstName:"Super",
         lastName:"DOODLES"
-    }
+    },
+        ];
 
     return (
         <div className="main-container">
             <Card
-                image={Vomito.image}
-                firstName={Vomito.firstName}
-                lastName={Vomito.lastName}
+                image={nftList[0].image}
+                firstName={nftList[0].firstName}
+                lastName={nftList[0].lastName}
             />
             <Card
-                image={Hangry.image}
-                firstName={Hangry.firstName}
-                lastName={Hangry.lastName}
+                image={nftList[1].image}
+                firstName={nftList[1].firstName}
+                lastName={nftList[1].lastName}
             />
             <Card
-            image={Beat.image}
-            firstName={Beat.firstName}
-            lastName={Beat.lastName}
+            image={nftList[2].image}
+            firstName={nftList[2].firstName}
+            lastName={nftList[2].lastName}
              />
             <Card
-                image={Super.image}
-                firstName={Super.firstName}
-                lastName={Super.lastName}
+                image={nftList[3].image}
+                firstName={nftList[3].firstName}
+                lastName={nftList[3].lastName}
             />
         </div>
-            )
+
+    )
 
 
 }

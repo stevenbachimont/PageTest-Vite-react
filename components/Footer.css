@@ -2,6 +2,7 @@
 footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: #8a876d;
     color: #191a27;
     position: fixed;
@@ -13,18 +14,14 @@ footer {
     justify-content: space-between;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
-footer:hover {
-    background-color: #817e24;
-    color: #131212;
-}
 
-h2 {
+.footTitle {
     font-size: 15px;
     margin-top: 16px;
     margin-left: 22px;
 }
 
-ul {
+.footList {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -33,12 +30,27 @@ ul {
     margin-right: 2rem;
 }
 
-li {
-    margin-bottom: 5px;
+.footLien {
+
     cursor: pointer;
+    margin: 0;
 }
 
 
-li:hover {
-    color: #ffcc00;
+
+
+@media screen and (min-width: 400px) {
+
+    footer:hover {
+        background-color: #817e24;
+        color: #131212;
+    }
+
+    li:hover {
+        color: #ffcc00;
+    }
+}
+
+@media screen and (min-width: 400px) {
+
 }

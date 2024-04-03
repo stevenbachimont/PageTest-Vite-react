@@ -10,7 +10,6 @@
 .card:hover {
     background-color: #505050;
     scale: 110%;
-    cursor: pointer;
 }
 
 .card img {
@@ -24,4 +23,8 @@
 
 h4 {
     margin: 0;
+}
+
+.more {
+    cursor: pointer;
 }
