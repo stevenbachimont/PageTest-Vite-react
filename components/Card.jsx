@@ -7,7 +7,6 @@ function Card({image, firstName, lastName}) {
             <img src={image} alt="Avatar" />
             <div className="container">
                 <h4>{firstName} {lastName}</h4>
-                <button className="more">En savoir +</button>
             </div>
         </div>
     );
