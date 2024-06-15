@@ -37,20 +37,31 @@ footer {
 }
 
 
+@media screen and (max-width: 420px) {
 
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
 
-@media screen and (min-width: 400px) {
 
     footer:hover {
         background-color: #817e24;
         color: #131212;
+
     }
 
     li:hover {
         color: #ffcc00;
     }
+
+    footer h2 {
+        font-size: 1rem;
+    }
+
+
+
 }
 
-@media screen and (min-width: 400px) {
 
-}
